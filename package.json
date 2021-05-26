@@ -1,0 +1,24 @@
+{
+  "name": "vuepress",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "authors": {
+    "name": "",
+    "email": ""
+  },
+  "repository": "/vuepress",
+  "scripts": {
+    "dev:docs": "vuepress dev docs --temp .temp",
+    "build:docs": "vuepress build docs",
+    "dev:blog": "vuepress dev blog --temp .temp",
+    "build:blog": "vuepress build blog"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.3.1",
+    "@vuepress/plugin-back-to-top": "^1.3.1",
+    "@vuepress/plugin-medium-zoom": "^1.3.1",
+    "@vuepress/theme-blog": "^2.3.3"
+  }
+}
