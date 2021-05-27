@@ -4,10 +4,11 @@
 set -e
 
 # 生成静态文件
-yarn build:blog
+# yarn build:docs
+# yarn build:blog
 
 # 进入生成的文件夹
-cd blog/.vuepress/dist
+cd dist
 
 # 如果是发布到自定义域名
 # echo 'www.example.com' > CNAME

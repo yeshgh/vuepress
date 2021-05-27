@@ -11,10 +11,11 @@
   "scripts": {
     "dev:docs": "vuepress dev docs --temp .temp",
     "build:docs": "vuepress build docs",
-    "deploy:docs": "sh deploy-docs.sh",
+    "deploy:docs": "yarn build:docs & sh deploy.sh",
     "dev:blog": "vuepress dev blog --temp .temp",
     "build:blog": "vuepress build blog",
-    "deploy:blog": "sh deploy-blog.sh"
+    "deploy:blog": "yarn build:blog & sh deploy.sh",
+    "deploy": "yarn build:docs &yarn build:blog & sh deploy.sh"
   },
   "license": "MIT",
   "devDependencies": {
